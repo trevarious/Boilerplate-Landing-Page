@@ -1,0 +1,9 @@
+first thing is cruicial. have the nav load at the same 
+rate as the rest of the content. right now there is no 
+delay on page refresh, the nav needs to transition at 
+same rate as rest of hero section.
+
+
+
+second is the faq. the background needs to take up more space
+to account for the dynamically created <p> elements.

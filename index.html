@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Candle Shop</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="navigation-container">
+            <div class="logo">
+                <a>The Candle Shop</a>
+            </div>
+            <div class="menu-toggle-button">
+                <div class="menu-toggle-bar"></div>
+                <div class="menu-toggle-bar"></div>
+                <div class="menu-toggle-bar"></div>
+            </div>
+        </div>
+    
+        <div class="menu-container">
+            <div class="close-button">
+                <div class="close-bar"></div>
+                <div class="close-bar"></div>
+            </div>
+            <div class="menu-container-banner">
+
+                <div class="logo-menu">The Candle Shop</div>
+            </div>
+            <div class="divider"></div>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#featured">New Collection</a></li>
+                        <li><a href="#featured">Shop All</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#eco">Eco</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="">Faq</a></li>
+                    </ul>
+                </div>
+                <div class="menu-search">
+                    <input id="menu-input" type="text" placeholder="Search">
+                    <button><img src="assets/search.png" alt="" width="15px"></button>
+                </div>
+            </nav>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    
+    
+
+    <section id='home' class="home">
+        <div class="left-home">
+            <img class="transition-text" id="home-image" src="assets/home1.jpg" alt="Home Image">
+        </div>
+        <div class="right-home">
+            <h4 class="transition-text">Crafting candles that transform spaces into serene sanctuaries, one flicker at a time</h4>
+            <div class="wind-lines">
+                <div class="wind-line"></div>
+                <div class="wind-line"></div>
+                <div class="wind-line"></div>
+            </div>
+
+        </div>
+    </section>
+    
+    
+    
+    <div class="divider"></div>
+
+    <section id="featured" class="featured">
+        <h1 id="text">In The Spotlight</h1>
+        <div class="collection-wrapper">
+            <div class="collection-item">
+                <img src="assets/feature1.jpg" alt="Spaceship Incense Holder">
+                <h1>Amber & Moss</h1>
+                <p>Earthy and rich</p>
+            </div>
+            <div class="collection-item">
+                <img src="assets/feature2.jpg" alt="Vase Perfect For Plants">
+                <h1>Sea Breeze</h1>
+                <p> Refreshing coastal air</p>
+            </div>
+            <div class="collection-item">
+                <img src="assets/feature3.jpg" alt="Mug Hold Your Coffee">
+                <h1>Campfire</h1>
+                <p>Smokey and warm</p>
+            </div>
+        </div>
+        <button id="featured-button" class="btn">SHOP NOW</button>
+    </section>
+    
+
+    <div class="divider"></div>
+
+
+    <section id="about" class="about">
+        <div class="left-about">
+            <h1>Discover the origin of The Candle Shop</h1>
+            <p>At The Candle Shop, we're inspired by the therapeutic qualities and the enchanting allure of candles. Our mission is to kindle joy in your senses with our exquisite, all-natural candle creations.</p>
+            <button class="btn">View Story</button>
+        </div>
+        <div class="right-about">
+            <img src="assets/cta.jpeg" alt="Image">
+        </div>
+    </section>
+    
+
+    <section id="eco" class="eco">
+        <h1>Our Eco Credentials</h1>
+        <div class="wrapper">
+            <div class="eco-wrapper">
+                <div class="eco-item">
+                    <img src="assets/eco1.png" alt="Eco-friendly icon">
+                    <p >Always Eco-Friendly</p>
+                </div>
+                <div class="eco-item">
+                    <img src="assets/eco2.png" alt="100% icon">
+                    <p >100% Sustainable</p>
+                </div>
+                <div class="eco-item">
+                    <img src="assets/eco3.png" alt="Sourced icon">
+                    <p>Responsibly Sourced</p>
+                </div>
+            </div>
+        </div>
+        <p class="eco-description">Our candles at The Candle Shop are crafted with a strong commitment to eco-friendliness, using sustainable ingredients and eco-friendly production methods. We exclusively utilize recyclable, biodegradable post-consumer materials for packaging, such as water-soluble starch backing peanuts and Ranpak Geami Wrap Pak. When you choose our candles, you are choosing a sustainable and environmentally responsible option for creating a cozy atmosphere in your home.</p>
+    </section>
+    
+
+
+    <section id="community" class="community">
+            <h1>Community</h1>
+            <div class="community-bottom"><a href="#"><img src="assets/community.jpeg" alt="logo"></a></div>
+            <p>The Candle Shop is deeply committed to building and nurturing a vibrant candle-loving community. </p>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h1>Get in Touch</h1>
+            <p>Please check out our<a class="faq-link" href="#faq">FAQ's</a> page first! For any questions or inquiries, feel free to reach out here:</p>
+            <form action="http://localhost:5000/process_form.php" method="post">
+
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input  class='form-input' type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input class="form-input" type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="form-input" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input class="form-input" type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Please write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+          <h1>Follow Us on Social Media</h1>
+          <div class="icons">
+            <a href="https://www.instagram.com/" target="blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.youtube.com" target="blank"><i class='bx bxl-youtube'></i></a>
+            <a href="https://twitter.com/home" target="blank"><i class='bx bxl-twitter'></i></a>
+          </div>
+          <p>&copy; The Candle Shop 2023 - All Rights Reserved</p>
+        </div>
+      </footer>
+
+
+      <div id="faq" class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-content">
+            <div class="faq-item">
+                <h4>Are your products safe to burn for people with breathing conditions?</h4>
+                <p>Yes, all of our candle products are safe to use for all types of people. However, please burn with caution.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>How fast will I get my order?</h4>
+                <p>Please allow 3 business days for order fulfillment and another 2-4 business days for delivery.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h4>Is your packaging environmentally friendly?</h4>
+                <p>All packaging is 100% recyclable, biodegradable, or, in some rare cases, post-consumer packaging reused from other vendors.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h4>What if my candle was damaged in shipping?</h4>
+                <p>If you receive a candle that has been damaged in shipping, please contact us within 24 hours of the delivery date with photos of the damaged items and the packaging materials. We can then work out a refund/exchange. After 24 hours of the delivery date, damaged goods will not be taken into consideration.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Do you offer returns?</h4>
+                <p>Yes. If you receive your candle and are not 100% happy with them, please contact us within 72 hours of the delivery, and we will send you instructions on how to ship the items back to us safely. We will then issue you a full refund once we receive the item in 'like new' condition. The customer will be responsible for return shipping charges.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h4>What are your candles made from?</h4>
+                <p>The Candle Shop uses glass for the container, and our wax is soy-based and wax-free.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h4>Why don't my candles smell?</h4>
+                <p>We strive to infuse wonderful scents into all of our products. If you find that you cannot smell your candle, please send us a description of the scents and we will do our best to work out a refund</p>
+            </div>
+            <!-- Add more FAQ items as needed -->
+            <button class="btn exit-faq">exit</button>
+        </div>
+    </div>
+    <div class="overlay-faq"></div>
+    
+    
+      
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
+
